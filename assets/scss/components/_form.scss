@@ -1,0 +1,54 @@
+/* Styling for form */
+#add-form-div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  #add-new {
+    display: inline-block;
+    // z-index: 2;
+    background-color: $secondary-color;
+    @include border-radius($border-rad);
+    margin: 1vh;
+    border: 0;
+    padding: 5px 10px;
+    height: 3rem;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 1.5rem;
+    color: $body-light;
+    text-transform: uppercase;
+  }
+
+  #add-new:hover {
+    box-shadow: 0 0px 3px 3px rgba(0,0,0,0.33);
+  }
+
+  #add-new:active {
+    box-shadow: 0 0 0 0;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input[type=text], [type=date], [type=number], [type=textarea] {
+    width: 66.67%;
+  }
+
+  input[type=textarea] {
+    height: 10vh;
+  }
+
+  input[type=submit] {
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  input[type=submit]:hover {
+    box-shadow: 0 0px 3px 3px rgba(0,0,0,0.33);
+  }  
+
+  input[type=submit]:active {
+    box-shadow: 0 0 0 0;
+  }
+}

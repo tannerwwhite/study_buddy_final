@@ -1,0 +1,58 @@
+/* Styling for weather widget */
+#weather-section {
+  display: none;
+
+  h2 {
+    margin: 0;
+    border: 0;
+    padding: 5px;
+    @include border-top-left-radius($border-rad);
+    @include border-top-right-radius($border-rad);
+    width: 100%;
+    background-color: $secondary-dark;
+    color: $body-light;
+  }
+
+  p {
+    margin: 5px;
+  }
+
+  table {
+    text-align: center;
+    // border: 1px solid $primary-light;
+    @include border-bottom-left-radius($border-rad);
+    @include border-bottom-right-radius($border-rad);
+  
+    caption {
+      display: table-caption;
+      border: 0;
+      padding: 5px;
+      @include border-top-left-radius($border-rad);
+      @include border-top-right-radius($border-rad);
+      background-color: $secondary-dark;
+      color: $heading-light;
+      font-family: $heading-font;
+      font-size: 1.778rem;
+    }
+
+    tr {
+      width: 100%;
+    }
+  
+    th, td {
+      padding: 0.5vw 1vw;
+      height: 45px;
+    }
+  
+    th {
+      font-family: $heading-font;
+      background-color: $secondary-color;
+      color: $body-light;
+    }
+
+    #city {
+      background-color: $secondary-light;
+      color: $body-light;
+    }
+  }
+}

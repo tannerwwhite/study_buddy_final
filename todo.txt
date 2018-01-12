@@ -1,0 +1,14 @@
+TO DO LIST
+Study Buddy
+Jan 6 2018
+
+/* 
+1. Make it so that index.html sends a message to firebase, firebase sends info
+   back, and populates the table on index.html
+*/
+2. Break address up into an object with key-value pairs for street address, 
+   city, state, and zip
+3. Concatenate address object into something human readable for table
+4. Clicking expanding button will select the location on the map and 
+5. show the weather widget with weather info for that location and (ideally) 
+   meeting time

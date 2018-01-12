@@ -1,0 +1,67 @@
+/* Styling for tables */
+/* Styling for the train table */
+#meeting-table {
+  text-align: left;
+  // border: 1px solid $primary-light;
+  @include border-bottom-left-radius($border-rad);
+  @include border-bottom-right-radius($border-rad);
+
+  caption {
+    display: table-caption;
+    border: 0;
+    padding: 5px;
+    @include border-top-left-radius($border-rad);
+    @include border-top-right-radius($border-rad);
+    background-color: $primary-dark;
+    color: $heading-light;
+    font-family: $heading-font;
+    text-align: center;
+    font-size: 1.778rem;
+  }
+
+  #add-new {
+   background-color: $secondary-light; 
+  }
+
+  tr {
+    width: 100%;
+  }
+
+  .event-description {
+    display: none;
+    background-color: $primary-light;
+  }
+
+  th, td {
+    padding: 2vw;
+    height: 45px;
+  }
+
+  th {
+    font-family: $heading-font;
+    background-color: $primary-color;
+    color: $body-light;
+  }
+
+  button {
+    @include border-radius($border-rad);
+    border: 0;
+    padding: 5px 10px;
+    background-color: $secondary-light;
+    color: $body-dark;
+    font-family: $heading-font;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  button:hover {
+    box-shadow: 0 0px 4px 4px rgba(0,0,0,0.33);
+  }
+
+  button:active {
+    box-shadow: 0 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  font-size: 14px;
+}

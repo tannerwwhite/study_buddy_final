@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <title>StudyBuddy</title>
+</head>
+<body>
+  <header>
+    <h1>Study Buddy</h1>
+    <!-- <button id="sign-in">Sign In</button> -->
+  </header>
+  <main id="meeting-section">
+    <table id="meeting-table">
+      <caption>Upcoming Meetings</caption>
+      <tr id="row-heading">
+        <th>Name</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Address</th>
+        <th>&nbsp;</th>
+      </tr>
+      <tbody>
+     <!-- Table data will go here -->
+      </tbody>
+    </table>
+    <div id="add-form-div">
+      <button type="button" name="add-new" id="add-new">Create new meeting</button>
+      <form id="add-form" class="card">
+          <label for="event-name">Name</label><br/>
+          <input name="event-name" id = "event-name" type="text" placeholder="Great Study Group" required><br/>
+          <label for="date">Date &amp; Time</label><br/>
+          <input name="date" id = "date" type="date" required><br/>
+          <label for="duration">Time</label><br/>
+          <input name="duration" id = "duration" type="text" placeholder="2:00 PM - 3:30 PM" required><br/>
+          <label for="street-address">Street Address</label><br/>
+          <input name="street-address" id = "street-address" type="text" placeholder="123 Study Blvd." required><br/>
+          <label for="city">City</label><br>
+          <input name="city" id = "city" type="text" placeholder="Studyton" required><br>
+          <label for="state">State</label><br>
+          <input name="state" id = "state" type="text" placeholder="OK" required><br>
+          <label for="zip">Zipcode</label><br>
+          <input name="zip" id = "zip" type="text" placeholder="12345" required><br>
+          <label for="description">Description</label><br/>
+          <input name="description" id = "description" type="textarea" required><br/>
+          <input type="submit" id="add-event" name="Add event">
+      </form>
+    </div>
+  </main>
+  <section id="map-section">
+  </section>
+  <section id="weather-section">
+      <table id="weather-table">
+        <caption>Current Weather</caption>
+        <tr id="weather-row-heading">
+          <th>Day</th>
+          <th>High</th>
+          <th>Low</th>
+          <th>Conditions</th>
+        </tr>
+        <tbody id="weather-table-body">
+       <!-- Table data will go here -->
+        </tbody>
+      </table>
+  </section>
+  <footer>
+    &copy;2017-2018 Blue Barracudas
+  </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script
+  src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0XE_dAk3WNVIoY80EUR751AWM0CCc8so&callback=initMap">
+    </script>
+  <script src="./assets/js/cloud.js"></script>
+  <script src="./assets/js/map.js"></script>
+  <script src="./assets/js/weather.js"></script>
+  <script src="./assets/js/style.js"></script>
+</body>
+</html>

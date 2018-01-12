@@ -1,0 +1,12 @@
+/* Styling for header */
+header {
+  background-color: $primary-color;
+  // margin: 0 0 2vh 0;
+  width: 100%;
+  padding: 2vh;
+
+  h1 {
+    color: $heading-light;
+    margin-left: 2.5vw;
+  }
+}

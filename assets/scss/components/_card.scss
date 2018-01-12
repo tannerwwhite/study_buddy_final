@@ -1,0 +1,26 @@
+/* Styling of floating card */
+.card {
+  display: none;
+  width: 100%;
+  margin: 1vh;
+  border: solid 1px $body-dark;
+  @include border-radius($border-rad);
+  padding: 1vh;
+  line-height: 2rem;
+}
+
+input {
+  border: 1px solid rgba(0,0,0,0.77);
+  border-radius: 5px;
+}
+
+#add-event {
+  background-color: $secondary-color;
+  border-radius: 5px;
+  margin: 1vh 0;
+  border: 0;
+  padding: 5px 10px;
+  height: 3rem;
+  text-align: center;
+  color: $body-light;
+}
